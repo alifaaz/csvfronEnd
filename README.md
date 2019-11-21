@@ -66,3 +66,50 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### API DOC
+        bill data
+         'user_id' => 'required',
+            'details' => 'required',
+            'continue_purchase' => 'required' 0,1,
+            'postpone' => 'required' 0,1 
+        -details
+           material_name  
+           real_price     
+           commission   
+           external_tax   
+           link           
+           quantity      
+           image_url     
+
+
+   transction (paid|get)
+
+    // payment ---- amount money
+    // responsible ----  loginId
+    // order_to ---- id
+    // updated_at 
+    // created_at
+    // date 
+    // note 
+
+
+
+   ##bill todo
+      .[] validate save bill
+      .[] uiXux
+### api problem
+
+[] unAuthorize use 402
+[] use middleware for clean code
+[] createdAt and updatedAt is mising
+[] build get one for better ux   
+[] there is no pospone in database
+[] postpone ,continous {edit, missing}
+
+
+### 
+
+

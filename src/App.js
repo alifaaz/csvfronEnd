@@ -1,26 +1,49 @@
+/* eslint-disable import/first */
+/* eslint-disable no-unused-vars */
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Index from "./components/index";
+// import {  } from "./components/index";
+import CSV from "./components/csv/csvUpload";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="ui container" style={{marginTop:50}}>
+      <h2 className="ui header huge">
+        <i className="dna icon"></i>
+        <div className="content" >
+         Detection Algorithm
+        </div>
+      </h2>
+    <div className="ui placeholder container "> 
+      <div className="ui   segment">
+        <div className="ui two column very relaxed stackable  centered grid" >
+          <div className="column" >
+            <Index />
+              </div>
+              <div className="ui middle aligned  centered column" >
+
+              <CSV />
+
+              </div>
+            </div>
+            <div className="ui vertical divider">
+              Or
+  </div>
+          </div>
+
+
+
+
+
+
+          
+      </div></div>
   );
 }
 
 export default App;
+
+
+
